@@ -58,7 +58,7 @@ maskNet = load_model("mask_detector.model")
 print("[INFO] starting video stream...")
 # vs = VideoStream(src=1).start()
 st.title("FACE MASK")
-vs = cv2.VideoCapture(1)
+vs = cv2.VideoCapture(0)
 FRAME_WINDOW = st.image([])
 while True:
     ret, frame = vs.read()
